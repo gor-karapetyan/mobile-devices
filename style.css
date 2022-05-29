@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #e7e8ec;
+}
+.gsm {
+  display: flex;
+  padding: 0 150px;
+  background-color: white;
+  align-items: center;
+}
+.LoginMobilePromo{
+  width: 622px;
+  padding: 18px 0 36px 0;
+  text-align: center;
+}
+.login_mobile_header {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+#myInput {
+  background-image: url('/images/searchicon.png');
+  background-position: 15px 9px;
+  background-repeat: no-repeat;
+  background-color: #ddd;
+  font-size: 15px;
+  padding: 10px 100px 10px 50px;
+  border: 1px solid #ddd;
+  margin-left: 150px;
+  border-radius: 5px;
+  width: 100px;
+  height: 15px;
+}
+
+.LoginMobilePromo__devices {
+  padding-top: 32px;
+  white-space: nowrap;
+  font-size: 0;
+}
+.LoginMobilePromoDevice {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 410px;
+}
+.LoginMobilePromoDevice--android {
+  width: 183px;
+}
+.LoginMobilePromoDevice--ios {
+  width: 198px;
+  background: no-repeat 0 0;
+  margin-left: -31px;
+}
+.LoginMobilePromoDevice__img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  left: 0;
+}
+.FlatButton {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: 0 0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: inherit;
+}
+.FlatButton__in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+svg {
+  display: block;
+  color: royalblue;
+}
+.FlatButton__content {
+  margin-bottom: 1px;
+  margin-left: 6px;
+  color: royalblue;
+}
+
+
+.sign_in_btn{
+  background-color: royalblue;
+  color: white;
+}
+.sign_up_btn{
+  background-color: olivedrab;
+  color: white;
+  margin-top: 10px;
+}
+
+
+
+.index_rcolumn {
+  width: 320px;
+  min-height: 625px;
+}
+.index_rcolumn .page_block:first-child {
+  margin-top: 0;
+}
+.index_rcolumn--vkid .page_block {
+  padding: 32px 24px;
+}
+.page_block{
+  background-color: white;
+  margin: 15px 0 0;
+  border-radius: 6px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  /*padding: 18px 0 36px 250px;*/
+  /*padding-left: 200px;*/
+  padding-top: 36px;
+}
+/*.VkIdForm__icon {
+  text-align: center;
+}*/
+.VkIdForm__header {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.FlatButton--wide {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.FlatButton--size-l {
+  font-size: 14px;
+  height: 36px;
+}
+/*.FlatButton--primary {
+  color: red;
+}*/
+
+.VkIdForm__faq {
+  margin-top: 24px;
+  margin-bottom: 0;
+  line-height: 16px;
+}
+.VkIdForm__link {
+  color: #626d7a;
+  font-weight: 500;
+}
+.index_vk_connect_faq {
+  color: #818c99;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.VkIdForm__icon {
+  height: 48px;
+  width: 49px;
+  margin: auto;
+}
+
+
+/*@media only screen and (max-width: 767px) {
+  #myInput {
+    display: none;
+  }
+  .gsm {
+    justify-content: center;
+  }
+  .LoginMobilePromo {
+    display: none;
+  }
+  .VkIdForm__icon {
+    visibility: hidden;
+  }
+  .VkIdForm__header {
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .VkIdForm__icon {
+    visibility: visible;
+  }
+}*/
+/*.hello {
+  display: none;
+}*/
+
+
+
+
+
+
+.kmn {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+.installApp {
+  margin-top: 12px;
+  background-color: #fff;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+.PageBlock {
+  background-color: #fff;
+  box-shadow: none;
+  width: 550px;
+  border-radius: 6px;
+}
+.installApp__link {
+  color: #2d81e0;
+  font-size: 15px;
+}
+.installApp__label {
+  background-image: url(/images/mobile_new.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding: 15px 25px 15px;
+  position: relative;
+  margin-left: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.installApp__label b {
+  font-weight: 500;
+}
+.installApp__arrow {
+  background-image: url(/images/blue_arrow.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 9px 15px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  margin-top: -7.5px;
+  width: 19px;
+  height: 15px;
+}
+.form_item {
+  padding: 0 20px 20px;
+}
+.VkIdForm__title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 24px;
+  line-height: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.VkIdForm__header2 {
+  font-size: 15px;
+  text-align: center;
+  line-height: 20px;
+  padding: 8px 24px;
+  color: #99a2ad;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fi_row {
+  padding: 10px 0 0;
+}
+.button {
+  width: 100%;
+  background-color: #2d81e0;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: #fff
+}
+.wide_button {
+  display: block;
+  text-align: center;
+  padding-left: 3px!important;
+  padding-right: 3px!important;
+}
+.success {
+  background-color: #4bb34b;
+  margin-top: -2px;
+}
+.fit_box {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+.layout {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .hello {
+    display: none;
+  }
+  .layout{
+    display: block;
+  }
+}

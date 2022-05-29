@@ -90,16 +90,15 @@ svg {
 }
 
 
-.sign_in_btn{
+.sign_in_btn {
   background-color: royalblue;
   color: white;
 }
-.sign_up_btn{
+.sign_up_btn {
   background-color: olivedrab;
   color: white;
   margin-top: 10px;
 }
-
 
 
 .index_rcolumn {
@@ -112,7 +111,7 @@ svg {
 .index_rcolumn--vkid .page_block {
   padding: 32px 24px;
 }
-.page_block{
+.page_block {
   background-color: white;
   margin: 15px 0 0;
   border-radius: 6px;
@@ -120,13 +119,8 @@ svg {
 .content {
   display: flex;
   justify-content: center;
-  /*padding: 18px 0 36px 250px;*/
-  /*padding-left: 200px;*/
   padding-top: 36px;
 }
-/*.VkIdForm__icon {
-  text-align: center;
-}*/
 .VkIdForm__header {
   text-align: center;
   margin-top: 16px;
@@ -134,7 +128,6 @@ svg {
   font-size: 20px;
   line-height: 24px;
 }
-
 .FlatButton--wide {
   width: 100%;
   box-sizing: border-box;
@@ -144,9 +137,7 @@ svg {
   font-size: 14px;
   height: 36px;
 }
-/*.FlatButton--primary {
-  color: red;
-}*/
+
 
 .VkIdForm__faq {
   margin-top: 24px;
@@ -171,36 +162,6 @@ a {
   width: 49px;
   margin: auto;
 }
-
-
-/*@media only screen and (max-width: 767px) {
-  #myInput {
-    display: none;
-  }
-  .gsm {
-    justify-content: center;
-  }
-  .LoginMobilePromo {
-    display: none;
-  }
-  .VkIdForm__icon {
-    visibility: hidden;
-  }
-  .VkIdForm__header {
-    margin-bottom: 0px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .VkIdForm__icon {
-    visibility: visible;
-  }
-}*/
-/*.hello {
-  display: none;
-}*/
-
-
-
 
 
 
@@ -261,7 +222,6 @@ a {
   text-align: center;
   padding-top: 24px;
   line-height: 24px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .VkIdForm__header2 {
   font-size: 15px;
@@ -269,7 +229,6 @@ a {
   line-height: 20px;
   padding: 8px 24px;
   color: #99a2ad;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .fi_row {
   padding: 10px 0 0;
@@ -302,9 +261,6 @@ a {
 
 
 
-
-
-
 .layout {
   display: none;
 }
@@ -313,7 +269,7 @@ a {
   .hello {
     display: none;
   }
-  .layout{
+  .layout {
     display: block;
   }
 }

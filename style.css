@@ -79,7 +79,7 @@ body {
   justify-content: center;
   height: inherit;
 }
-svg {
+.svg {
   display: block;
   color: royalblue;
 }
@@ -160,9 +160,13 @@ a {
 .VkIdForm__icon {
   height: 48px;
   width: 49px;
+  color: #1976d2;
   margin: auto;
 }
-
+.FlatButton__before > svg {
+  color: #2787f5;
+  display: block;
+}
 
 
 .kmn {
@@ -258,15 +262,6 @@ a {
   display: flex;
   justify-content: center;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -462,6 +457,60 @@ a {
   line-height: 1.33;
   appearance: none;
 }
+
+/*tooltip*/
+
+.vkc__TextField__icon {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+}
+.vkc__TextField__errorIcon {
+  color: #eb4250;
+}
+.vkc__TextField__errorIcon1 {
+  border-color: #eb4250;
+}
+.vkc__TextField__tooltip {
+  height: auto;
+  display: inline-block;
+  position: absolute;
+  right: 1px;
+  top: 31px;
+  margin-top: 5px;
+  box-shadow: 0 8px 12px 0 rgb(0 0 0 / 16%), 0 0 4px 0 rgb(0 0 0 / 12%);
+  border-radius: 8px;
+  z-index: 1;
+  cursor: default;
+}
+.vkc__TextField__tooltip .vkc__TextField__arrow {
+  top: 0;
+  right: 17px;
+  margin-top: -6px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: rgba(0,0,0,0) rgba(0,0,0,0) #fff;
+  border-left: 6px solid rgba(0,0,0,0);
+  border-bottom: 6px solid white;
+  border-right: 6px solid rgba(0,0,0,0);
+  border-top: 0 solid rgba(0,0,0,0);
+}
+.vkc__TextField__tooltip .vkc__TextField__text {
+  min-height: 36px;
+  width: 100%;
+  max-width: 240px;
+  padding: 8px 12px 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: start;
+  font-size: 14px;
+  margin: 0;
+  color: #2c2d2e;
+}
+
+/*end tooltip*/
 .vkc__EnterLogin__button {
   margin-bottom: 16px;
 }

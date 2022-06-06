@@ -16,7 +16,7 @@ function openNextSlide() {
             nextSlide.classList.add('visible');
         }
     }
-    localSt();
+    /*localSt();*/
     myFunction();
     /*checkMediaQuery();*/
 }
@@ -53,9 +53,90 @@ function myFunction() {
 }
 
 
+    document.getElementById("name").addEventListener("keyup", function() {
+    var nameInput = document.getElementById('name').value;
 
 
-var testObject = { 'name': "Gor", 'lastName': "Karapetyan", 'age': 25, 'emailAddress': "gorkarapetyan@gmail.com" };
+    if (nameInput != "") {
+        //document.getElementById('send').removeAttribute("disabled");
+        document.getElementById('send').classList.remove('vkc__Button__disabled');
+    } else {
+        document.getElementById('send').setAttribute("disabled", null);
+        document.getElementById('send').classList.add('vkc__Button__disabled');
+        
+    }
+});
+
+
+
+
+
+function emailValid() {
+    var emailID = document.getElementById("name").value;
+    atpos = emailID.indexOf("@");
+    dotpos = emailID.lastIndexOf(".");
+    if (atpos < 1 || ( dotpos - atpos < 2 ))
+    {
+        document.querySelector('.vkc__TextField__icon').classList.remove('layout');
+        document.querySelector('.vkc__TextField__tooltip').classList.remove('layout');
+        document.querySelector('.vkc__TextField__input').classList.add('vkc__TextField__errorIcon1');
+        //alert("Please enter correct email ID");
+        //return false;
+    }else{
+        localSt();
+        /*openNextSlide()*/
+    }
+}
+
+
+
+
+var inputEmail= document.getElementById("name");
+
+var id = "id" + Math.random().toString(16).slice(2);
+var value = "email";
+
+function localSt() {
+    if(inputEmail.value === null) {
+        const button = document.querySelector('#send');
+
+        const disableButton = () => {
+            button.disabled = true;
+        };
+
+        button.addEventListener('click', disableButton);
+    }else{
+        // Put the object into storage
+        localStorage.setItem(`${id}`,value + " " + inputEmail.value);
+
+        // Retrieve the object from storage
+        var retrievedObject = localStorage.getItem(`${id}`);
+
+        console.log('retrievedObject: ', JSON.parse(retrievedObject));
+        console.log(id);
+    }
+
+}
+
+
+
+
+
+/*//var inputEmail= document.getElementById("name");
+function emailValid() {
+    //email = $('inputEmail');
+    filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if (filter.test(inputEmail.value)) {
+        alert("is valid email");
+    // Yay! valid
+    //return true;
+    }else{
+        alert("is not valid email");
+        //{return false;}
+    }
+}*/
+
+/*var testObject = { 'name': "Gor", 'lastName': "Karapetyan", 'age': 25, 'emailAddress': "gorkarapetyan@gmail.com" };
 
 var id = "id" + Math.random().toString(16).slice(2);
 
@@ -69,8 +150,7 @@ function localSt() {
 
     console.log('retrievedObject: ', JSON.parse(retrievedObject));
     console.log(id);
-}
-
+}*/
 
 
 /*function checkMediaQuery() {

@@ -458,6 +458,12 @@ a {
   appearance: none;
 }
 
+/*input phone*/
+.vkc__EnterLogin__form {
+  margin-bottom: 16px;
+}
+/*end input phone*/
+
 /*tooltip*/
 
 .vkc__TextField__icon {
